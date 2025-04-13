@@ -8,7 +8,9 @@
     <title>Black Forest Cake</title>
 </head>
 <body>
-<header>
+
+<header> <!--Contains navbar with links to other parts of the webpage-->
+
 <nav class="navbar">
     <ul class="navbar-list">
         <li><a href="#home">Home</a></li>
@@ -22,12 +24,14 @@
 <section class="home">
 <h1>Black Forest Cake</h1>
 
+<div class="description"> <!--TODO use this in CSS with all other recipe webpages to make it all similar when it comes to description-->
 <p>When we talk about Germany and which dessert represents them, Black Forest Cake (or as its known in Germany - <i>“Schwarzwälder Kirschtorte.”</i>) is the one to go with.
     <br>
     With layers of chocolate, at least four of them, light and fluffy whipped cream and sour/sweet cherries, there is not a single person that could resist such goodiness.
 </p>
 <p>The best time to make it is always, but lets keep it real, when the cherries get discounted, there is no better time to <br>
 whip some good ol` cream and added chocolate base.</p>
+</div>
 
 <img src="https://recepttura.com/wp-content/uploads/2020/11/schwarzwald-torta-recept-za-najbolju-tortu-svarcvald-cokolada-slag-visnje-recepttura.jpg?ezimgfmt=ng%3Awebp%2Fngcb1" alt="picture of a cut of the Black Forest Cake">
 <br>
@@ -35,9 +39,46 @@ whip some good ol` cream and added chocolate base.</p>
 <p>After a good amount of time spent in the fridge, it will be ready to enjoy to the fullest!</p>
 </section>
 
-<section class="ingredients">
-<h2>Ingredients</h2>
-<ul></ul>
+<section> <!--Need to check if I will need to add class for CSS-->
+    <h2>Ingredients</h2> 
+<button>Metric</button> <!--TODO find out how to add possibilty to add cups and metric together in the same recipe-->
+
+<!--Add possibilty for input checkbox that will be able to cross over used ingredients and -->
+
+<h2 class="nameOfIngredient">Chocolate base</h2>
+<ul class="no-bullets">
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">6 large eggs <span class="note">at room temperature</span></li> <!--To make my text lighter and different I used span-->
+        </label> <!--TODO remove the dot--> 
+    </li>
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">1 tsp vanilla extract
+         </label>
+    </li>
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">275g caster sugar
+         </label>
+    </li>
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">50 g cocoa powder
+         </label>
+    </li>
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">100 g plain flour <span class="note">all-purpose flour</span></li>
+         </label>
+    </li>
+    <li>
+        <label class="ingredient">
+            <input type="checkbox">150g butter
+         </label>
+    </li>
+
+</ul>
 </section>
 
 <section class="recipe">
@@ -50,3 +91,17 @@ whip some good ol` cream and added chocolate base.</p>
 
 </body>
 </html>
+
+<!--WHAT I HAVE LEARNED-->
+<!--I added label to be able to add input with checkbox as type to add a possibilty of interaction of the
+user with my webpage-->
+<!--To add a name to the list which is the <ul> I added a heading as <h> or you 
+    can add a paragraph <p>-->
+
+
+<!--TODO remove the bullets in ALL ul lists by adding this to CSS
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0; /* optional: remove indentation */
+  }
+-->
