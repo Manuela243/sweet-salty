@@ -11,7 +11,7 @@
 
 <header> <!--Contains navbar with links to other parts of the webpage-->
 
-<nav class="navbar">
+<nav class="navbar"> <!--TODO remove bullets from navbar-->
     <ul class="navbar-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#ingredients">Ingredients</a></li>
@@ -21,76 +21,181 @@
 </nav>
 </header>
 
-<section class="home">
-<h1>Black Forest Cake</h1>
+<main> <!--Changed to main because I want it to be easy to distinguish core content of my web page-->
+    <h1>Black Forest Cake</h1>
 
 <div class="description"> <!--TODO use this in CSS with all other recipe webpages to make it all similar when it comes to description-->
-<p>When we talk about Germany and which dessert represents them, Black Forest Cake (or as its known in Germany - <i>“Schwarzwälder Kirschtorte.”</i>) is the one to go with.
-    <br>
+    <p>When we talk about Germany and which dessert represents them, Black Forest Cake (or as its known in Germany - <i>“Schwarzwälder Kirschtorte.”</i>) is the one to go with.
+<br>
     With layers of chocolate, at least four of them, light and fluffy whipped cream and sour/sweet cherries, there is not a single person that could resist such goodiness.
-</p>
-<p>The best time to make it is always, but lets keep it real, when the cherries get discounted, there is no better time to <br>
+    </p>
+    <p>The best time to make it is always, but lets keep it real, when the cherries get discounted, there is no better time to <br>
 whip some good ol` cream and added chocolate base.</p>
 </div>
 
-<img src="https://recepttura.com/wp-content/uploads/2020/11/schwarzwald-torta-recept-za-najbolju-tortu-svarcvald-cokolada-slag-visnje-recepttura.jpg?ezimgfmt=ng%3Awebp%2Fngcb1" alt="picture of a cut of the Black Forest Cake">
+    <img src="https://recepttura.com/wp-content/uploads/2020/11/schwarzwald-torta-recept-za-najbolju-tortu-svarcvald-cokolada-slag-visnje-recepttura.jpg?ezimgfmt=ng%3Awebp%2Fngcb1" alt="picture of a cut of the Black Forest Cake">
 <br>
-<p>This is not for children! Well, it will not be if you do use the special ingredient, and that is <b>cherry liquor</b>.</p>
-<p>After a good amount of time spent in the fridge, it will be ready to enjoy to the fullest!</p>
-</section>
+    <p>This is not for children! Well, it will not be if you do use the special ingredient, and that is <b>cherry liquor</b>.</p>
+    <p>After a good amount of time spent in the fridge, it will be ready to enjoy to the fullest!</p>
+</main>
 
-<section> <!--Need to check if I will need to add class for CSS-->
+<section class="ingredient-list"> <!--Need to check if I will need to add class for CSS-->
+    <div class="chocolate-base">
     <h2>Ingredients</h2> 
-<button>Metric</button> <!--TODO find out how to add possibilty to add cups and metric together in the same recipe-->
+        <button>Metric</button> <!--TODO find out how to add possibilty to add cups and metric together in the same recipe-->
 
-<!--Add possibilty for input checkbox that will be able to cross over used ingredients and -->
+<!--Add possibilty for input checkbox that will be able to cross over used ingredients -->
 
-<h2 class="nameOfIngredient">Chocolate base</h2>
-<ul class="no-bullets">
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">6 large eggs <span class="note">at room temperature</span></li> <!--To make my text lighter and different I used span-->
-        </label> <!--TODO remove the dot--> 
-    </li>
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">1 tsp vanilla extract
-         </label>
-    </li>
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">275g caster sugar
-         </label>
-    </li>
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">50 g cocoa powder
-         </label>
-    </li>
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">100 g plain flour <span class="note">all-purpose flour</span></li>
-         </label>
-    </li>
-    <li>
-        <label class="ingredient">
-            <input type="checkbox">150g butter
-         </label>
-    </li>
+    <h2 class="nameOfIngredient">Chocolate base</h2>
+        <ul class="noBullets">
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">6 large eggs <span class="note">at room temperature</span></li> <!--To make my text lighter and different I used span-->
+                </label> <!--TODO remove the dot--> 
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">1 tsp vanilla extract
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">275 g caster sugar
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">50 g cocoa powder
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">100 g plain flour <span class="note">all-purpose flour</span></li>
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">150 g butter
+                </label>
+            </li>
 
-</ul>
+        </ul>
+    </div>
+
+    <h2 class="name-of-ingredient">Cherry syrup</h2>
+        <ul class="no-bullets">
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">670 g pitted cherries in syrup (sour sherries, in jar or can)<span class="note">drained and juice reserved</span>
+            </li> 
+                </label>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">85 ml cherry liqueur
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">110 g caster sugar <span class="note">superfine sugar</span>
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">4 tsp cornstarch
+                </label>
+            </li>
+        </ul>
+
+    <h2 class="name-of-ingredient">Cherry syrup</h2>
+        <ul class="no-bullets">
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">1l heavy cream
+            </li>
+                </label>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">2tsp vanilla extract
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">40 g powdered sugar
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">100 g dark chocolate
+                </label>
+            </li>
+            <li>
+                <label class="ingredient">
+                    <input type="checkbox">12 sour cherries <span class="note">for decorating top of cake</span>
+                </label>
+            </li>
+        </ul>
 </section>
 
-<section class="recipe">
-
+<section class="recipe-instructions">
+    <h2>Chocolate base</h2> <!--TODO Make it all uppercase in CSS-->
+        <ol class="instructions-chocolate-base">
+            <li><b>Oven and cake pans:</b>Preheat oven to 180°C / 350°F (160°C fan). Grease 3 x 20cm (8”) cake pans with butter, line with parchment / baking
+    paper.</li>
+            <li><b>Sift dry ingredients:</b>Combine dry ingredients by sifting the cocoa and plain flour into a bowl. Set aside.</li>
+            <li><b>Beat eggs:</b>Beat eggs for 30 seconds on speed 6 of a stand mixer fitted with a whisk attachment, or hand beater.</li>
+            <li><b>Slowly add sugar:</b>With the beater still going, slowly pour the sugar in over 45 seconds, then add the vanilla.</li>
+            <li><b>Beat 7 minutes:</b>Beat for 7 minutes more on speed 8, or until tripled in volume and pale in colour. Don't shortcut this step; this is
+    what makes the cake rise (there's no baking powder used).</li>
+            <li><b>Fold in dry ingredients:</b>Add the flour and cocoa mixture to the batter, folding in with a spatula until just combined (a few streaks of flour
+    remaining is fine). Be gentle here, we don't want to knock out the air bubbles.</li>
+            <li><b>Fold in butter:</b>Add the butter and fold gently through until just combined. Once you can no longer see any flour, stop stirring.</li>
+            <li><b>Fill cake pans:</b>PPour the batter into the three prepared pans. The batter should be fairly thin and pourable.</li>
+            <li><b>Bake:</b>Place into the oven and bake for 25 minutes, until springy to the touch and a skewer inserted into the cake centre comes
+            out clean. (Note 5 regarding shelf placement).</li>
+            <li><b>Cool:</b>Remove from the oven. Cool in the pan for 10 minutes before turning the cakes out onto a rack to cool completely.</li>
+        </ol>
+    <h2>Cherry syrup</h2> <!--TODO make it all uppercase in CSS-->
+        <ol class="cherry-syrup">
+            <li><b>Drain cherries:</b>And reserve liquid.</li>
+            <li><b>Cherry cornflour slurry:</b>Measure out 1/4 cup (60ml) of the reserved cherry juice and mix with the cornflour to make a slurry. Set aside.</li>
+            <li><b>Make cherry syrup:</b>Place a medium pot over medium-low heat. Add the sugar and another 1/3 cup of reserved juice. Bring to a gentle simmer
+            to dissolve the sugar. Stir in the cornflour slurry and bring to a simmer. Cook for 1 minute, stirring, until it
+            thickens into a thin syrup.</li>
+            <li><b>Soak cherries, cool:</b>Remove from the heat and stir in the kirsch. Pour the syrup over the drained cherries and allow to cool completely
+            before using.</li>
+        </ol>
+    <h2>Whip cream</h2>
+        <ol class="whip-cream">
+            <li><b>Mix it up:</b>Just prior to assembling, place cream, icing sugar and vanilla in a large bowl. Whip into pretty stiff peaks – about 5
+            minutes on high. Refrigerate until needed.</li>
+        </ol>
+    <h2>Construct</h2>
+        <ol class="construct">
+            <li>Place one cake layer upside down on a serving platter</li>
+            <li><b>Brush with cherry syrup:</b>JBrush the cake layer with 1/4 cup of the cherry syrup the cherries are soaking in.</li>
+            <li><b>Cream layer:</b>Spread with 1 cup of whipped cream, leaving a 1cm (1/2") border (the weight of the next cake layer gently pressed will
+            push cream to edge).</li>
+            <li><b>Layer cherries:</b>Top the cream with half the cherries (in a single layer), using a slotted spoon to drain well (but don't pat dry, want
+            the cherries juicy!).</li>
+            <li><b>Repeat:</b>Top with another cake layer, brush with 1/4 cup syrup, spread with 1 cup cream, top with remaining cherries, and place
+            3rd cake layer on top.</li>
+            <li><b>Cover with cream:</b>Reserve 1 1/2 cups whipped cream for piping cream decorations. Spread the remaining cream over the top and side of the
+            cake. Pipe dollops around the edge of top using a large star-tipped nozzle. Top each dollop with a maraschino cherry.</li>
+            <li><b>Rest 4 hours:</b>Leave cake in the fridge for at least 4 hours, preferably overnight, to allow flavours to develop and syrup to really
+            soak into the cake.</li>
+            <li><b>Take out of fridge:</b>Remove from fridge 30 minutes prior to serving (but be mindful of cream melting on hot days).</li>
+        </ol>
 </section>
 
-<section class="notes">
+<section class="recipe-notes">
 
 </section>
 
 </body>
 </html>
+
+
+
 
 <!--WHAT I HAVE LEARNED-->
 <!--I added label to be able to add input with checkbox as type to add a possibilty of interaction of the
