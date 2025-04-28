@@ -19,7 +19,7 @@ using my own solo ideas and just searching and learning as I make the webpage.
 ### The project
 
 - I love cooking and baking! Second favourite thing to do, after taking long walks, reading books and of course, coding! That is why I have decided to make a small webpage that would consist of three recipes that I hold close to my heart.<br>
-- Name of my webpage is <strong>Sweet&salty</strong> because it consists two salty and one sweet recipe. My idea was to show what I have learned by making a recipe webpages that would be informative and useful.<br>
+- Name of my webpage is <strong>Sweet&salty</strong> because it consists one salty and two sweet recipes. My idea was to show what I have learned by making a recipe webpages that would be informative and useful.<br>
 - The idea is to have an interactive, normal, cooking webpage that will show you my favourite recipe while adding links to the other recipes you can find from the main webpages and authors.<br>
 - It will have pictures of the process of the making and of the final dish. I will add the abilty to cross the ingredient that has been used, that the screen does not go dark when you are using my site (add a button for it),<br>
 that you can change from European conversion to US conversion considering the ingredients.<br>
@@ -43,7 +43,8 @@ that you can change from European conversion to US conversion considering the in
  **CSS**
 
 ### What I learned
-
+  - To be able to move from a part of the web page to another part, you need to use <strong>id</strong>.
+  - It is good to use <strong>id</strong> when you want to <i>jump</i> or <i>link</i> somewhere / / use <strong>class</strong> when you want to <i>style</i> elements with CSS.
 
 ### Useful resources
 
