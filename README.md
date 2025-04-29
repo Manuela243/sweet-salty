@@ -45,6 +45,7 @@ that you can change from European conversion to US conversion considering the in
 ### What I learned
   - To be able to move from a part of the web page to another part, you need to use <strong>id</strong>.
   - It is good to use <strong>id</strong> when you want to <i>jump</i> or <i>link</i> somewhere / / use <strong>class</strong> when you want to <i>style</i> elements with CSS.
+  - To connect label the input needs to have the same id name, than you write <i>"label for="test" and the input id="test""</i> for them to connect properly - it is not only visually associated with the corresponding text input but programmatically to which means that a screen reader will read out the label when the user is focused on the form input (as said <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label" on MDN webdocs> </a>)
 
 ### Useful resources
 
