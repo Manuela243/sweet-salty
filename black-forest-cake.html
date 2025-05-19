@@ -49,58 +49,71 @@ whip some good ol` cream and added chocolate base.</p>
     <h2 class="name-of-ingredient">Chocolate base</h2>
         <ul class="no-bullets">
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">6 large eggs <span class="note">at room temperature</span></li> <!--To make my text lighter and different I used span-->
+                <label class="ingredient" for="ingredient-0-egg">
+                    <input id="ingredient-0-egg" type="checkbox">
+                    6 large eggs <span class="note">at room temperature</span></li> <!--To make my text lighter and different I used span-->
                 </label> <!--TODO remove the dot--> 
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">1 tsp vanilla extract
+                <label class="ingredient" for="ingredient-1-vanilla-extract">
+                    <input id="ingredient-1-vanilla-extract" type="checkbox">
+                    1 tsp vanilla extract
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">275 g caster sugar
+                <label class="ingredient" for="ingredient-2-sugar">
+                    <input id="ingredient-2-sugar" type="checkbox">
+                    275 g caster sugar
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">50 g cocoa powder
+                <label class="ingredient" for="ingredient-3-cocoa">
+                    <input id="ingredient-3-cocoa" type="checkbox">
+                    50 g cocoa powder
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">100 g plain flour <span class="note">all-purpose flour</span></li>
+                <label class="ingredient" for="ingredient-4-flour">
+                    <input id="ingredient-4-flour" type="checkbox">
+                    100 g plain flour <span class="note">all-purpose flour</span></li>
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">150 g butter
+                <label class="ingredient" for="ingredient-5-butter">
+                    <input id="ingredient-5-butter" type="checkbox">
+                    150 g butter
                 </label>
             </li>
         </ul>
-        <img class="preparation-images" src="https://www.recipetineats.com/tachyon/2021/05/Black-Forest-Cake-ingredients-1.jpg?resize=900%2C643&zoom=0.86" alt="Image of ingredients used for chocolate base">
+        <img class="preparation-images" 
+        src="https://www.recipetineats.com/tachyon/2021/05/Black-Forest-Cake-ingredients-1.jpg?resize=900%2C643&zoom=0.86" 
+        alt="Image of ingredients used for chocolate base">
     
     <h2 class="name-of-ingredient">Cherry syrup</h2>
         <ul class="no-bullets">
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">670 g pitted cherries in syrup (sour sherries, in jar or can)<span class="note">drained and juice reserved</span>
+                <label class="ingredient" for="ingredient-6-cherries">
+                    <input id="ingredient-6-cherries" type="checkbox">
+                    670 g pitted cherries in syrup (sour sherries, in jar or can)
+                    <span class="note">drained and juice reserved</span>
             </li> 
                 </label>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">85 ml cherry liqueur
+                <label class="ingredient" for="ingredient-7-cherry-liqueur">
+                    <input id="ingredient-7-cherry-liqueur" type="checkbox">
+                    85 ml cherry liqueur
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">110 g caster sugar <span class="note">superfine sugar</span>
+                <label class="ingredient" for="ingredient-8-sugar">
+                    <input id="ingredient-8-sugar" type="checkbox">
+                    110 g caster sugar 
+                    <span class="note">superfine sugar</span>
                 </label>
             </li>
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">4 tsp cornstarch
+                <label class="ingredient" for="ingredient-9-cornstarch">
+                    <input id="ingredient-9-cornstarch" type="checkbox">4 tsp cornstarch
                 </label>
             </li>
         </ul>
@@ -109,11 +122,11 @@ whip some good ol` cream and added chocolate base.</p>
     <h2 class="name-of-ingredient">Decorating</h2>
         <ul class="no-bullets">
             <li>
-                <label class="ingredient">
-                    <input type="checkbox">1l heavy cream
-            </li>
+                <label class="ingredient" for="ingredient-10-heavy-cream">
+                    <input id="ingredient-10-heavy-cream" type="checkbox">1l heavy cream
                 </label>
-            <li>
+            </li>
+                
                 <label class="ingredient">
                     <input type="checkbox">2tsp vanilla extract
                 </label>
@@ -177,7 +190,7 @@ whip some good ol` cream and added chocolate base.</p>
         </ol>
     
     <h2>Construct</h2>
-        <ol class="instructions-steps">
+        <ol class="instructions-steps"> <!--Maybe I should add in CSS .step-title for visual bolding?-->
             <li>Place one cake layer upside down on a serving platter</li>
             <li><b>Brush with cherry syrup:</b> Brush the cake layer with 1/4 cup of the cherry syrup the cherries are soaking in.</li>
             <li><b>Cream layer:</b> Spread with 1 cup of whipped cream, leaving a 1cm (1/2") border (the weight of the next cake layer gently pressed will
